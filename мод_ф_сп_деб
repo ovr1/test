@@ -38,7 +38,12 @@ while flag:
         f_ank_deb(name)
         
         print('\nРешение по кредиту:')
-        credit(gender,age,status,status1)
+        #credit(gender,age,status,status1)
+
+                              #Traceback (most recent call last):
+                              #File "F:\кредит\мод_деб.py", line 17, in <module>
+                              #credit(gender,age,status,status1)
+                              #NameError: name 'gender' is not defined 
         
 
     else:
