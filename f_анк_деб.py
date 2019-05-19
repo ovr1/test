@@ -1,8 +1,6 @@
 def f_ank_deb(name):
-    for k,v in name.ite
-
-    ms():
-        if k == 'gender': 
+    for k,v in name.items():
+        if k == 'gender':
             print('gender =',v)
         elif k == 'age':
             print('age =',v)
