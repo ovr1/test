@@ -1,5 +1,5 @@
 def filter_rare_female_names(names):
-    return [name for name in names if not(name.endswith("я")) and not(name.endswith("а"))]
+    print([name for name in names if not(name.endswith("я")) and not(name.endswith("а"))])
 
 
 
