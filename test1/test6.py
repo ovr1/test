@@ -1,9 +1,5 @@
 def get_intersection(lhs, rhs):
-    intersect = []
-    for element in rhs:
-        if element in lhs:
-            intersect.append(element)
-    print (intersect)
+    print(list(dict((x, (lhs + rhs).count(x)) for x in set(lhs + rhs) if (lhs + rhs).count(x) > 1)))
 
 a = [1, 2, 3, 5, 7, 9]
 b = [2, 3, 5, 6, 7, 8]
@@ -14,3 +10,9 @@ get_intersection(a,b)
 get_intersection(female_names, b)
 
 get_intersection(female_names, male_names)
+
+
+
+
+
+
