@@ -11,8 +11,3 @@ get_intersection(female_names, b)
 
 get_intersection(female_names, male_names)
 
-
-
-
-
-
