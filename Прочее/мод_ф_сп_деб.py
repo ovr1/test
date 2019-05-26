@@ -1,5 +1,5 @@
-from f_credit import credit
-from f_анк_деб import f_ank_deb
+from Прочее.f_credit import credit
+from Прочее.f_анк_деб import f_ank_deb
 
 gender = ' '
 age = 25
