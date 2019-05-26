@@ -1,12 +1,11 @@
 import requests
 
-TOKEN = "bot738095135:AAGoDa90OCX5JckiOYDTknU1cD7MJWtR08M/getMe"
+url = "https://api.telegram.org/bot738095135:AAGoDa90OCX5JckiOYDTknU1cD7MJWtR08M/getUpdates"
+r = requests.get(url)
 
-server = "https://api.telegram.org"
-endpoint = "getMe"
+if r.status_code == 200:
+    response = r.json()
 
-url = server + "/" + TOKEN + "/" +endpoint
-
-response = requests.get(url)
-if response.status_code == 200:
-    print(response.json())
+    last_update = response["result"][-1]
+    last_chat = last_update["message"]["chat"]
+    print("Chat id:", last_chat["id"])
