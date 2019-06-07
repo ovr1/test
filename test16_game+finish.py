@@ -17,14 +17,14 @@ def game_finished(board):
    if sum(L)<=6:
        N.append(0)
    if 1 in N:
-       return 1
+       return int(1)
    elif 2 in N:
-       return 2
+       return int(2)
    elif 0 in N:
-       return 0
+       return int(0)
    else:
-       return -1
+       return int(-1)
 
-b = [[1, 0, 1], [2, 1, 0], [2, 1, 2]]
+b = [[1, 0, 1], [2, 2, 2], [2, 2, 0]]
 
 print(game_finished(b))
