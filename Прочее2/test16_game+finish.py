@@ -25,6 +25,6 @@ def game_finished(board):
    else:
        return int(-1)
 
-b = [[1, 0, 1], [2, 2, 2], [2, 2, 0]]
+b = [[1, 1, 0], [2, 0, 2], [2, 2, 0]]
 
 print(game_finished(b))

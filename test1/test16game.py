@@ -27,6 +27,6 @@ def validate_board(board):
 
 
 
-b = [[2, 1, 0], [1, 2, 0], [1, 1, 0]]
+b = [[1, 0, 1], [1, 0, 2], [1, 1, 2]]
 print(validate_board(b))
 

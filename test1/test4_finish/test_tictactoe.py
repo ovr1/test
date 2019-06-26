@@ -19,4 +19,7 @@ class MyGameTest(unittest.TestCase):
         print(f"Очистка после прогона {self.id()}")
         print("---")
 
+    def validate_board(self):
+        """ проверять формат вывода (булевый) """
+        self.assertTrue(1)
 

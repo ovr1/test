@@ -3,10 +3,7 @@ import mycalc
 
 def test_add():
     assert mycalc.add(1, 2) == 3
-    if mycalc.add(1, 2) == 3:
-        print("add(a, b) OK")
-    else:
-        print("add(a, b) NOT OK")
+    print("add(a, b) OK")
 
 
 def test_mul():
@@ -42,7 +39,7 @@ try:
 except AssertionError:
     print("test_add(a, b) NOT OK")
 
-test_add()
+
 test_mul()
 test_sub()
 test_div()
