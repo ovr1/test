@@ -19,14 +19,14 @@ def check_set(cards):
     print(namber_c)
     if (len(namber_n) or len(namber_s) or len(namber_sh) or len(namber_c)) == 1 \
             or (len(namber_n)==3 and len(namber_s)==3 and len(namber_sh)==3 and len(namber_c) == 3):
-        print(True)
+        return True
     else:
-        print(False)
+        return False
 
 
 
-check_set([
+print(check_set([
     [1, "DIAMOND", "STRIPPED", "RED",],
-    [1, "SQUIGGLE", "SOLID", "PURPLE"],
-    [1, "OVAL", "OPEN", "GREEN"]
-    ])
+    [3, "SQUIGGLE", "SOLID", "PURPLE"],
+    [2, "OVAL", "OPEN", "GREEN"]
+    ]))
