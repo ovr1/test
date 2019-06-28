@@ -10,10 +10,10 @@ def validate_board(board):
        count_2 += line.count(2)
        if len(line) != 3:
            N.append(0)
-       if (line.count(1)==line.count(2)) or (line.count(1) - line.count(2) == 1):
-           N.append(1)
-       else:
-           N.append(0)
+       #if (line.count(1)==line.count(2)) or (line.count(1) - line.count(2) == 1):
+       #    N.append(1)
+       #else:
+       #    N.append(0)
        for x in line:
            if x in n:
                N.append(1)
@@ -27,6 +27,6 @@ def validate_board(board):
 
 
 
-b = [[1, 0, 1], [1, 0, 2], [1, 1, 2]]
+b = [[1, 2, 1], [0, 1, 2], [2, 2, 1, ]]
 print(validate_board(b))
 
